@@ -1,0 +1,45 @@
+/*fontes e tipografias
+*/
+/*propriedade basicas::after:
+
+font-family: define a familia da fonte;
+fonte-size: tamanho da fonte (px, em, rem, %)
+color: atribuindo uma cor ao texto:
+line-height: altura da linha (espaçamento entre linhas)
+font-weight: espessura do texto (normal, bold, semi-boid, 300, 500, 700)
+
+text=-align: alinhamento (left, center, right, justify:)
+*/
+
+body{
+    font-family: Georgia, 'Times New Roman', Times,
+    serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+tutorial
+importando fonte do google font
+1-abrir google font no navegador
+2-escolhe a fonte
+3-obter codigo de importação
+4-adicionar link ao html
+5-aplicar font-fomily no meu css
+*/
+.titulo{
+    font-family: "Bebas Neue", sans-serif;
+}
+/* decoração e transformação 
+text-transform: vai alterar o texto para maiusculo (uppercase) ou minusculo (lowercase).
+letter-spacing: espaçamento horizontal entre as palavras
+text-shadow: aplica um efito de sobra ao nosso texto:
+*/
+.sub-titulo {
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-shadow: 2px 2px 4px #aaa;
+}
