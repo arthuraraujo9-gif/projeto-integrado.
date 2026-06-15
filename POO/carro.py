@@ -67,4 +67,3 @@ carro2.acelerar (50)
 carro2.frear(20)
 
 carro2.exibir_info()
-

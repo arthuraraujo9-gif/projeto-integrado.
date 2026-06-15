@@ -191,4 +191,4 @@ ON DELETE RESTRICT;
 -- 3: Não é possivel excluir uma turma que possua alunos vinculados (RESTRICT)
 
 -- Apaga o Banco de Dados
-DROP DATABASE IF EXISTS escola;
+ -- DROP DATABASE IF EXISTS escola;

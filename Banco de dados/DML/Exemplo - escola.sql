@@ -63,10 +63,32 @@ VALUES
  '(63)99999-3333', 
  '2025-10-16', 
  1
-);
-
+);curso
 
 INSERT INTO notas(id_aluno, id_disciplina, nota)
 VALUES
 -- mateus tirou 10.0 em banco de dados 
 (2, 1, 10.0);
+
+SELECT *
+FROM Aluno
+WHERE nota > 8;
+
+UPDATE professor
+SET telefone ='(63)98888-1111'
+WHERE id_professor = 1;
+
+UPDATE professor
+SET especialidade ='matemática'
+WHERE id_professor = 4;
+
+UPDATE cursos
+SET carga_horaria = 1400
+WHERE id_curso = 1;
+
+DELETE FROM disciplina
+WHERE id_disciplina = 4;
+
+DELETE FROM alunos
+WHERE id_aluno = 1;
+
