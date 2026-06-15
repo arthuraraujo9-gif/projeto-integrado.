@@ -70,6 +70,9 @@ VALUES
 -- mateus tirou 10.0 em banco de dados 
 (2, 1, 10.0);
 
+
+-- continuação da aula passada
+
 SELECT *
 FROM Aluno
 WHERE nota > 8;
@@ -91,4 +94,3 @@ WHERE id_disciplina = 4;
 
 DELETE FROM alunos
 WHERE id_aluno = 1;
-
