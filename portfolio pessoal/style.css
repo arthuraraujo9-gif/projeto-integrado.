@@ -102,32 +102,32 @@ nav ul li a:hover {
 /* Ajuste, tamanho e boa organização da imagem de perfil */
 .foto-perfil {
     width: 150px;           /* Limita a largura da imagem */
-    height: 150px;          /* Limita a altura idêntica para manter proporção */
+    height: 160px;          /* Limita a altura idêntica para manter proporção */
     border-radius: 50%;     /* Arredondamento completo dos cantos, tornando-a circular */
     object-fit: cover;      /* Recorta e ajusta a imagem sem distorcê-la */
-    border: 3px solid #38bdf8; /* Adiciona uma borda azul ao redor da imagem */
+    border: 5px solid #38bdf8; /* Adiciona uma borda azul ao redor da imagem */
     display: block;         /* Permite aplicação correta de margens automáticas */
-    margin: 0 auto 20px auto; /* Centraliza a imagem horizontalmente e afasta o texto abaixo */
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); /* Sombra luminosa integrada à borda */
+    margin: 1 auto 30px auto; /* Centraliza a imagem horizontalmente e afasta o texto abaixo */
+    box-shadow: 30 15px rgba(56, 189, 248, 0.4); /* Sombra luminosa integrada à borda */
 }
 
 /* Organização e estilização das listas internas do portfólio */
 .lista-habilidades {
     list-style-type: square; /* Altera o marcador padrão para formato quadrado elegante */
-    padding-left: 20px;     /* Recuo interno para alinhar a lista corretamente */
+    padding-left: 10px;     /* Recuo interno para alinhar a lista corretamente */
 }
 
 .lista-habilidades li {
-    margin-bottom: 12px;    /* Espaçamento vertical confortável entre itens da lista */
+    margin-bottom: 15px;    /* Espaçamento vertical confortável entre itens da lista */
     color: #cbd5e1;
 }
 
 /* Desafio Extra: Grid elástico para exibição dos cartões de Hobbies */
 .card-container {
     display: flex;
-    gap: 20px;              /* Espaçamento uniforme entre cada cartão */
+    gap: 35px;              /* Espaçamento uniforme entre cada cartão */
     flex-wrap: wrap;        /* Torna o layout responsivo, quebrando linhas em telas pequenas */
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Estilização individual das estruturas de cartões (Cards) */
@@ -166,4 +166,49 @@ footer {
 footer p {
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+/* ==========================================================================
+   7. SEÇÃO DE BOTÕES DE CONTATO (ESTILO PROFISSIONAL)
+   ========================================================================== */
+
+/* Coloca os botões um embaixo do outro, bem centralizados */
+.container-botoes-github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;              /* Espaço perfeito entre os dois botões */
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Transforma o link de texto sem graça em um botão moderno de aplicativo */
+.botao-github-premium {
+    display: block;
+    width: 100%;
+    max-width: 320px;          /* Mantém o tamanho do botão equilibrado */
+    text-align: center;
+    background-color: #24292e; /* Fundo escuro oficial do GitHub */
+    color: #ffffff !important; /* Texto sempre branco puro */
+    padding: 10px 40px;        /* Espessura interna para o botão ficar robusto */
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;     /* Tira aquela linha feia de link */
+    border-radius: 10px;        /* Cantos arredondados profissionais */
+    border: 3px solid #475569; /* Borda que combina com seus outros cards */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+    transition: all 0.3s ease; /* Deixa os efeitos visuais suaves */
+}
+
+/* Visual interativo lindo quando você passa o mouse por cima */
+.botao-github-premium:hover {
+    background-color: #38bdf8; /* Usa o azul neon que você escolheu nas suas seções */
+    color: #0f172a !important; /* Muda a letra para preto para dar contraste perfeito */
+    transform: translateY(-3px); /* O botão sobe fisicamente na tela */
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.4); /* Cria um brilho azul lindo atrás */
+}
+
+/* Efeito mecânico ao clicar */
+.botao-github-premium:active {
+    transform: translateY(-1px);
 }
